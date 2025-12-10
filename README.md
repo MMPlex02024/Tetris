@@ -1,2 +1,2 @@
-# Tetris-
+# Tetris
 Projektni zadatak za OOP 
