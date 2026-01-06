@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": ".gitignore",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\.gitignore",
+              "RelativeDocumentMoniker": "Tetris\\.gitignore",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\.gitignore",
+              "RelativeToolTip": "Tetris\\.gitignore",
+              "ViewState": "AgIAAEMBAAAAAAAAAAAAAE4BAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-01-06T15:56:10.533Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
