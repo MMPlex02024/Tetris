@@ -1,9 +1,24 @@
-#include <iostream>
-using namespace std;
+#include <raylib.h>
+#include "ploca.h"
 
-int main(void) {
+int main() {
+    Color pukeZelena = { 137, 162, 3, 255 };
 
-	cout << "Tetris";
+    InitWindow(600, 900, "Tetris");
+    SetTargetFPS(60);
 
-	return 0;
+    Ploca p;  
+    p.Init(); 
+
+    while (!WindowShouldClose()) {
+        BeginDrawing();
+        ClearBackground(pukeZelena);
+
+        p.Mreza(); 
+
+        EndDrawing();
+    }
+
+    CloseWindow();
+    return 0;
 }
