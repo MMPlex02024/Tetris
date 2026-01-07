@@ -6,13 +6,32 @@ Blok::Blok()
 	srotacija = 0;
 
 	boje = GetCellColors();
+
+	int kretanjeRed = 0;
+	int kretanjeStupac = 0;
 }
 
 void Blok::Draw() {
 	std::vector<Pozicija> trenutneCelije = cells[srotacija];
 	for (Pozicija item : trenutneCelije)
 	{
-		DrawRectangle(item.stupac * scelija + 1, item.red * scelija + 1, scelija -1, scelija -1, boje[id]);
+		DrawRectangle((item.stupac + kretanjeStupac) * scelija + 1, (item.red + kretanjeRed) * scelija + 1, scelija - 1, scelija - 1, boje[id]);
 		
 	}
+}
+
+void Blok::Move(int red, int stupac) {
+	int noviRed = kretanjeRed + red;
+	int noviStupac = kretanjeStupac + stupac;
+
+	for (Pozicija cell : cells[srotacija]) {
+		int x = cell.stupac + noviStupac;
+		int y = cell.red + noviRed;
+
+		if (x < 0 || x > 9) return;   
+		if (y > 19) return;
+	}
+
+	kretanjeRed = noviRed;
+	kretanjeStupac = noviStupac;
 }

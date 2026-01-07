@@ -1,6 +1,6 @@
-﻿  blokovi.cpp
-  main.cpp
+﻿  blok.cpp
+  blokovi.cpp
   Generating Code...
-  Tetris.vcxproj -> O:\OOP projekt\Tetris\x64\Debug\Tetris.exe
+  Tetris.vcxproj -> C:\Users\ivand\Desktop\Tetris\OOP-seminarski\OOP-seminarski\x64\Debug\Tetris.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.
