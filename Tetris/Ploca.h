@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <raylib.h>
+#include <vector>
 
 class Ploca {
 public:
@@ -15,4 +16,5 @@ public:
     void Init();
     void Print();
     void Mreza();     
+    const std::vector<Color>& GetCellColors() const;
 };

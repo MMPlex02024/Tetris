@@ -124,10 +124,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="blok.cpp" />
+    <ClCompile Include="blokovi.cpp" />
+    <ClCompile Include="boje.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Ploca.cpp" />
+    <ClCompile Include="pozicija.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="blok.h" />
+    <ClInclude Include="boje.h" />
+    <ClInclude Include="Ploca.h" />
+    <ClInclude Include="pozicija.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

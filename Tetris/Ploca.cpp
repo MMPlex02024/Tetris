@@ -1,6 +1,10 @@
 #include "ploca.h"
 #include <iostream>
 using namespace std;
+#include <vector>
+#include "boje.h"
+
+
 
 Ploca::Ploca() {
     Init();
@@ -32,4 +36,10 @@ void Ploca::Mreza() {
     for (int j = 0; j <= stupci; j++) {
         DrawLine(j * velicinaR, 0, j * velicinaR, redovi * velicinaS, BLACK);
     }
+}
+
+const std::vector<Color>& Ploca::GetCellColors() const
+{
+    static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava };
+    return colors;
 }
