@@ -38,6 +38,16 @@ void Ploca::Mreza() {
     }
 }
 
+bool Ploca::celijavani(int red, int stupac)
+{
+    
+    if (red >= 0 && red < redovi && stupac >= 0 && stupac < stupci)
+    {
+        return false;
+    }
+    return true;
+}
+
 const std::vector<Color>& Ploca::GetCellColors() const
 {
     static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava };

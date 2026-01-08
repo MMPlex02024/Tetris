@@ -9,6 +9,8 @@ public:
     int stupci = 10;
     int grid[20][10];   
     
+    bool celijavani(int red, int stupac);
+
     float velicinaR = 0;
     float velicinaS = 0;
 

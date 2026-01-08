@@ -1,7 +1,8 @@
+#pragma once
 #include "blok.h"
 #include "pozicija.h"
 
-
+// Reordered blocks: I, O, T, S, Z, J, L
 
 class IBlok : public Blok
 {

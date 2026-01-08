@@ -33,6 +33,9 @@
     <ClCompile Include="blokovi.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="igra.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include=".gitignore" />
@@ -49,6 +52,12 @@
     </ClInclude>
     <ClInclude Include="boje.h">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="igra.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="blokovi.h">
+      <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

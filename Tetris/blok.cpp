@@ -7,8 +7,8 @@ Blok::Blok()
 
 	boje = GetCellColors();
 
-	int kretanjeRed = 0;
-	int kretanjeStupac = 0;
+    kretanjeRed = 0;
+    kretanjeStupac = 0;
 }
 
 void Blok::Draw() {
@@ -34,4 +34,34 @@ void Blok::Move(int red, int stupac) {
 
 	kretanjeRed = noviRed;
 	kretanjeStupac = noviStupac;
+}
+
+void Blok::Rotiraj() 
+{
+    srotacija++;
+    if(srotacija == (int)cells.size())
+    {
+        srotacija = 0;
+    }
+}
+
+void Blok::VratiRotaciju()
+{
+    if (srotacija == 0) {
+        srotacija = (int)cells.size() - 1;
+    } else {
+        srotacija--;
+    }
+}
+
+std::vector<Pozicija> Blok::GetAbsoluteCells() const
+{
+    std::vector<Pozicija> result;
+    auto it = cells.find(srotacija);
+    if (it == cells.end()) return result;
+
+    for (const Pozicija &p : it->second) {
+        result.emplace_back(p.red + kretanjeRed, p.stupac + kretanjeStupac);
+    }
+    return result;
 }

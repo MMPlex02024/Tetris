@@ -1,7 +1,7 @@
 #include <raylib.h>
 #include "ploca.h"
-#include "blokovi.cpp"
-
+#include "blokovi.h"
+#include "igra.h"
 
 int main() {
     Color pukeZelena = { 137, 162, 3, 255 };
@@ -12,7 +12,9 @@ int main() {
     Ploca p;  
     p.Init(); 
 
-	LBlok blok = LBlok();
+    Igra igra;
+
+    //LBlok blok = LBlok();
 
     bool blokZakljucan = false;
 
@@ -22,37 +24,28 @@ int main() {
     while (!WindowShouldClose()) {
        
         timer += GetFrameTime();
-
+        
         if (timer >= timerPad && !blokZakljucan) {
-            blok.Move(1, 0);
+            igra.MoveBlockDown();
             timer = 0;
 
-            if (blok.kretanjeRed >= 17) {
+            if (igra.CurrentBlockRow() >= 17) {
                 blokZakljucan = true;
             }
         }
 
         if (!blokZakljucan) {
-            if (IsKeyPressed(KEY_LEFT)) {
-                blok.Move(0, -1);
-            }
-            if (IsKeyPressed(KEY_RIGHT)) {
-                blok.Move(0, 1);
-            }
-            if (IsKeyPressed(KEY_DOWN)) {
-                blok.Move(1, 0);
-            }
+            igra.HandleInput();
 
-            if (blok.kretanjeRed >= 17) {
+            if (igra.CurrentBlockRow() >= 17) {
                 blokZakljucan = true;
             }
         }
 
         BeginDrawing();
         ClearBackground(pukeZelena);
-
+		igra.Draw();    
         p.Mreza(); 
-		blok.Draw();
         EndDrawing();
     }
 

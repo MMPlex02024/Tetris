@@ -127,6 +127,7 @@
     <ClCompile Include="blok.cpp" />
     <ClCompile Include="blokovi.cpp" />
     <ClCompile Include="boje.cpp" />
+    <ClCompile Include="igra.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Ploca.cpp" />
     <ClCompile Include="pozicija.cpp" />
@@ -136,7 +137,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="blok.h" />
+    <ClInclude Include="blokovi.h" />
     <ClInclude Include="boje.h" />
+    <ClInclude Include="igra.h" />
     <ClInclude Include="Ploca.h" />
     <ClInclude Include="pozicija.h" />
   </ItemGroup>
