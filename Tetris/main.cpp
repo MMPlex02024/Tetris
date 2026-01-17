@@ -3,6 +3,17 @@
 #include "blokovi.h"
 #include "igra.h"
 
+double zadnjiupdate = 0;
+
+bool dogodiloSe(double interval) {
+        double sada = GetTime();
+    if (sada - zadnjiupdate >= interval){
+        zadnjiupdate = sada;
+        return true;
+    }
+	return false;
+}
+
 int main() {
     Color pukeZelena = { 137, 162, 3, 255 };
 
@@ -14,7 +25,7 @@ int main() {
 
     Igra igra;
 
-    //LBlok blok = LBlok();
+    
 
     bool blokZakljucan = false;
 
@@ -22,9 +33,10 @@ int main() {
     float timerPad = 1.0f;
 
     while (!WindowShouldClose()) {
-       
+
         timer += GetFrameTime();
-        
+
+        /*
         if (timer >= timerPad && !blokZakljucan) {
             igra.MoveBlockDown();
             timer = 0;
@@ -41,7 +53,12 @@ int main() {
                 blokZakljucan = true;
             }
         }
-
+        */
+        igra.HandleInput();
+        if (dogodiloSe(0.2))
+        {
+			igra.MoveBlockDown();
+        }
         BeginDrawing();
         ClearBackground(pukeZelena);
 		igra.Draw();    

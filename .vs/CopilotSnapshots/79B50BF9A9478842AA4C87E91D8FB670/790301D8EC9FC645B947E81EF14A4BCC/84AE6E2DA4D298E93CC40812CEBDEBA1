@@ -1,0 +1,45 @@
+﻿#include "igra.h"
+#include <random>
+
+Igra::Igra()
+{
+	ploca = Ploca();
+	blokovi = GetAllBlokovi();
+	trenutniBlok = GetRandomBlok();
+	sljedeciBlok = GetRandomBlok();
+
+}
+
+Blok Igra::GetRandomBlok()
+{
+	if(blokovi.empty()) {
+		blokovi = GetAllBlokovi();
+	} 
+
+	int randomIndex = rand() % blokovi.size();
+	Blok blok = blokovi[randomIndex];
+	blokovi.erase(blokovi.begin() + randomIndex);
+	
+	return blok;
+}
+
+std::vector<Blok> Igra::GetAllBlokovi() const
+{
+	return { IBlok(), JBlok(), OBlok(), SBlok(), TBlok(), ZBlok(), LBlok() };
+
+}
+
+void Igra:: Draw() {
+	ploca.Mreza();
+	trenutniBlok.Draw();
+}
+
+void Igra::MoveBlockLeft()
+{
+    trenutniBlok.Move(0, -1);
+}
+
+void Igra::MoveBlockRight()
+{
+    trenutniBlok.Move(0, 1);
+}

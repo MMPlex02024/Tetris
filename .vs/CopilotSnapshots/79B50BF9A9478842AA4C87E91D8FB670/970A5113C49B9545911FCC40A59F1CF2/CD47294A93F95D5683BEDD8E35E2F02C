@@ -1,0 +1,11 @@
+﻿#include "blok.h"
+
+Blok::Blok()
+{
+	scelija = 30;
+	srotacija = 0;
+
+	boje = GetCellColor();
+
+
+}

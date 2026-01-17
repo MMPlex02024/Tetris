@@ -1,6 +1,7 @@
-﻿  blok.cpp
-  blokovi.cpp
-  igra.cpp
+﻿  boje.cpp
+O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4838: conversion from 'int' to 'unsigned char' requires a narrowing conversion
+O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4305: 'initializing': truncation from 'int' to 'unsigned char'
+O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4309: 'initializing': truncation of constant value
   main.cpp
   Generating Code...
   Tetris.vcxproj -> O:\OOP projekt\Tetris\x64\Debug\Tetris.exe

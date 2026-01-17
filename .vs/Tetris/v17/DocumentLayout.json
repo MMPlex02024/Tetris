@@ -3,12 +3,52 @@
   "WorkspaceRootPath": "O:\\OOP projekt\\Tetris\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\igra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\igra.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\Ploca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\Ploca.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\boje.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\boje.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\blok.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\blok.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\boje.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\boje.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\blokovi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\blokovi.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\igra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\igra.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\blok.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\blok.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\blokovi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\blokovi.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\Ploca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\Ploca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|O:\\OOP projekt\\Tetris\\Tetris\\pozicija.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{0A429F26-086E-4F12-AF0E-2B2DA8E7AE97}|Tetris\\Tetris.vcxproj|solutionrelative:Tetris\\pozicija.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +66,156 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "blokovi.h",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\blokovi.h",
+              "RelativeDocumentMoniker": "Tetris\\blokovi.h",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\blokovi.h",
+              "RelativeToolTip": "Tetris\\blokovi.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFoAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-08T22:02:11.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "pozicija.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\pozicija.cpp",
+              "RelativeDocumentMoniker": "Tetris\\pozicija.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\pozicija.cpp",
+              "RelativeToolTip": "Tetris\\pozicija.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-08T19:53:27.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "blokovi.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\blokovi.cpp",
+              "RelativeDocumentMoniker": "Tetris\\blokovi.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\blokovi.cpp",
+              "RelativeToolTip": "Tetris\\blokovi.cpp",
+              "ViewState": "AgIAACMAAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T14:48:58.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "blok.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\blok.cpp",
+              "RelativeDocumentMoniker": "Tetris\\blok.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\blok.cpp",
+              "RelativeToolTip": "Tetris\\blok.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T12:59:34.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "blok.h",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\blok.h",
+              "RelativeDocumentMoniker": "Tetris\\blok.h",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\blok.h",
+              "RelativeToolTip": "Tetris\\blok.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-07T12:22:04.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "boje.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\boje.cpp",
+              "RelativeDocumentMoniker": "Tetris\\boje.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\boje.cpp",
+              "RelativeToolTip": "Tetris\\boje.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T12:43:00.678Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "boje.h",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\boje.h",
+              "RelativeDocumentMoniker": "Tetris\\boje.h",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\boje.h",
+              "RelativeToolTip": "Tetris\\boje.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-07T12:40:16.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Ploca.h",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\Ploca.h",
+              "RelativeDocumentMoniker": "Tetris\\Ploca.h",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\Ploca.h",
+              "RelativeToolTip": "Tetris\\Ploca.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-07T12:39:14.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": ".gitignore",
-              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\.gitignore",
-              "RelativeDocumentMoniker": "Tetris\\.gitignore",
-              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\.gitignore",
-              "RelativeToolTip": "Tetris\\.gitignore",
-              "ViewState": "AgIAAEMBAAAAAAAAAAAAAE4BAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-01-06T15:56:10.533Z",
+              "Title": "Ploca.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\Ploca.cpp",
+              "RelativeDocumentMoniker": "Tetris\\Ploca.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\Ploca.cpp",
+              "RelativeToolTip": "Tetris\\Ploca.cpp",
+              "ViewState": "AgIAABMAAAAAAAAAAAAawCEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-07T12:25:20.54Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "igra.cpp",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\igra.cpp",
+              "RelativeDocumentMoniker": "Tetris\\igra.cpp",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\igra.cpp",
+              "RelativeToolTip": "Tetris\\igra.cpp",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAuwHkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-01-08T21:29:08.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "igra.h",
+              "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\igra.h",
+              "RelativeDocumentMoniker": "Tetris\\igra.h",
+              "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\igra.h",
+              "RelativeToolTip": "Tetris\\igra.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2026-01-08T21:27:05.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "main.cpp",
               "DocumentMoniker": "O:\\OOP projekt\\Tetris\\Tetris\\main.cpp",
               "RelativeDocumentMoniker": "Tetris\\main.cpp",
               "ToolTip": "O:\\OOP projekt\\Tetris\\Tetris\\main.cpp",
               "RelativeToolTip": "Tetris\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACwAAAAAAAAAAAAuwD8AAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-01-06T15:30:21.304Z",
               "EditorCaption": ""

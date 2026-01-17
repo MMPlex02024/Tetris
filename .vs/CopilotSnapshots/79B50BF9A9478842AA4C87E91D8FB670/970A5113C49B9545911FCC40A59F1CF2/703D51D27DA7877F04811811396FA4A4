@@ -1,0 +1,18 @@
+﻿#pragma once
+#include "ploca.h"
+#include "blokovi.cpp"
+
+class Igra
+{
+public:
+	Igra();	
+	Blok GetRandomBlok();
+	std::vector<Blok> GetAllBlokovi() const;
+	Ploca ploca;
+	void Draw();
+private:
+	std::vector<Blok> blokvi;
+	Blok trenutniBlok;
+	Blok sljedeciBlok;
+};
+

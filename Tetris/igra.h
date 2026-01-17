@@ -7,19 +7,22 @@ class Igra
 public:
 	Igra();	
 	Blok GetRandomBlok();
-	std::vector<Blok> GetAllBlokovi() const;
+	std::vector<Blok> GetAllBlokovi();
 	void MoveBlockLeft();
 	void MoveBlockRight();
 	void MoveBlockDown();
 	int CurrentBlockRow() const;
 	void HandleInput();
-    void RotacijaBloka();
+    
 	Ploca ploca;
 	void Draw();
 private:
     std::vector<Blok> blokovi;
 	Blok trenutniBlok;
 	Blok sljedeciBlok;
-    bool CelijaVani();
+	bool provjerabloka();
+	void RotacijaBloka();
+	void zakljucavanje();
+	bool CelijaVani();
 };
 

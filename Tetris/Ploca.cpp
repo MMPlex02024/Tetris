@@ -50,6 +50,15 @@ bool Ploca::celijavani(int red, int stupac)
 
 const std::vector<Color>& Ploca::GetCellColors() const
 {
-    static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava };
+    
+    static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava, plava };
     return colors;
+}
+
+bool Ploca::celijazauzeta(int red, int stupac)
+{
+    
+    if (red < 0 || red >= redovi || stupac < 0 || stupac >= stupci) return true;
+
+    return grid[red][stupac] != 0;
 }

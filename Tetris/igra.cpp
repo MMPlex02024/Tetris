@@ -24,7 +24,7 @@ Blok Igra::GetRandomBlok()
 	return blok;
 }
 
-std::vector<Blok> Igra::GetAllBlokovi() const
+std::vector<Blok> Igra::GetAllBlokovi()  
 {
 	return { IBlok(), JBlok(), OBlok(), SBlok(), TBlok(), ZBlok(), LBlok() };
 
@@ -38,7 +38,7 @@ void Igra:: Draw() {
 void Igra::MoveBlockLeft()
 {
     trenutniBlok.Move(0, -1);
-    if (CelijaVani()) {
+    if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(0, 1);
     }
 }
@@ -46,7 +46,7 @@ void Igra::MoveBlockLeft()
 void Igra::MoveBlockRight()
 {
     trenutniBlok.Move(0, 1);
-    if (CelijaVani()) {
+    if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(0, -1);
     }
 }
@@ -54,8 +54,9 @@ void Igra::MoveBlockRight()
 void Igra::MoveBlockDown()
 {
     trenutniBlok.Move(1, 0);
-    if (CelijaVani()) {
+    if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(-1, 0);
+        zakljucavanje();
     }
 }
 
@@ -89,7 +90,7 @@ void Igra::HandleInput()
 void Igra::RotacijaBloka()
 {
     trenutniBlok.Rotiraj();
-    if (CelijaVani()) {
+    if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.VratiRotaciju();
     }
 }
@@ -103,4 +104,27 @@ bool Igra::CelijaVani()
         }
     }
     return false;
+}
+
+
+void Igra::zakljucavanje()
+{
+    std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
+    for (Pozicija item : tiles) {
+        ploca.grid[item.red][item.stupac] = trenutniBlok.id;
+    }
+   
+    trenutniBlok = sljedeciBlok;
+    sljedeciBlok = GetRandomBlok();
+}
+
+bool Igra::provjerabloka()
+{
+    std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
+    for (const Pozicija &item : tiles) {
+        if (ploca.celijazauzeta(item.red, item.stupac)) {
+            return false;
+        }
+    }
+    return true;
 }

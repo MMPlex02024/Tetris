@@ -1,0 +1,67 @@
+﻿#include "blok.h"
+
+Blok::Blok()
+{
+	scelija = 30;
+	srotacija = 0;
+
+	boje = GetCellColors();
+
+    kretanjeRed = 0;
+    kretanjeStupac = 0;
+}
+
+void Blok::Draw() {
+	std::vector<Pozicija> trenutneCelije = cells[srotacija];
+	for (Pozicija item : trenutneCelije)
+	{
+		DrawRectangle((item.stupac + kretanjeStupac) * scelija + 1, (item.red + kretanjeRed) * scelija + 1, scelija - 1, scelija - 1, boje[id]);
+		
+	}
+}
+
+void Blok::Move(int red, int stupac) {
+	int noviRed = kretanjeRed + red;
+	int noviStupac = kretanjeStupac + stupac;
+
+	for (Pozicija cell : cells[srotacija]) {
+		int x = cell.stupac + noviStupac;
+		int y = cell.red + noviRed;
+
+		if (x < 0 || x > 9) return;   
+		if (y > 19) return;
+	}
+
+	kretanjeRed = noviRed;
+	kretanjeStupac = noviStupac;
+}
+
+void Blok::Rotate() 
+{
+	srotacija++;
+	if(srotacija == (int)cells.size())
+	{
+		srotacija = 0;
+	}
+}
+
+void Blok::RotateBack()
+{
+    if (srotacija == 0) {
+        srotacija = (int)cells.size() - 1;
+    } else {
+        srotacija--;
+    }
+}
+
+std::vector<Pozicija> Blok::GetAbsoluteCells() const
+{
+    std::vector<Pozicija> result;
+    auto it = cells.find(srotacija);
+    if (it == cells.end()) return result;
+
+    for (const Pozicija &p : it->second) {
+        result.emplace_back(p.red + kretanjeRed, p.stupac + kretanjeStupac);
+    }
+    return result;
+}

@@ -33,7 +33,7 @@ class TBlok : public Blok
 public:
     TBlok()
     {
-        id = 6;
+        id = 1;
         cells[0] = { Pozicija(0, 1), Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2) };
         cells[1] = { Pozicija(0, 1), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 1) };
         cells[2] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 1) };
@@ -47,7 +47,7 @@ class SBlok : public Blok
 public:
     SBlok()
     {
-        id = 5;
+        id = 6;
         cells[0] = { Pozicija(0, 1), Pozicija(0, 2), Pozicija(1, 0), Pozicija(1, 1) };
         cells[1] = { Pozicija(0, 1), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 2) };
         cells[2] = { Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 0), Pozicija(2, 1) };

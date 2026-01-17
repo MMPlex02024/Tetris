@@ -56,12 +56,14 @@ void Blok::VratiRotaciju()
 
 std::vector<Pozicija> Blok::GetAbsoluteCells() const
 {
-    std::vector<Pozicija> result;
-    auto it = cells.find(srotacija);
-    if (it == cells.end()) return result;
-
-    for (const Pozicija &p : it->second) {
-        result.emplace_back(p.red + kretanjeRed, p.stupac + kretanjeStupac);
+    
+    std::vector<Pozicija> tiles = cells.at(srotacija);
+    std::vector<Pozicija> movedTiles;
+    movedTiles.reserve(tiles.size());
+    for (Pozicija item : tiles)
+    {
+        Pozicija newPos(item.red + kretanjeRed, item.stupac + kretanjeStupac);
+        movedTiles.push_back(newPos);
     }
-    return result;
+    return movedTiles;
 }
