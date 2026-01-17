@@ -11,7 +11,7 @@ public:
 	void MoveBlockLeft();
 	void MoveBlockRight();
 	void MoveBlockDown();
-	int CurrentBlockRow() const;
+	int CurrentBlockRow();
 	void HandleInput();
     
 	Ploca ploca;

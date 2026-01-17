@@ -48,7 +48,7 @@ bool Ploca::celijavani(int red, int stupac)
     return true;
 }
 
-const std::vector<Color>& Ploca::GetCellColors() const
+ const std::vector<Color>& Ploca::GetCellColors()  const
 {
     
     static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava, plava };
@@ -61,4 +61,38 @@ bool Ploca::celijazauzeta(int red, int stupac)
     if (red < 0 || red >= redovi || stupac < 0 || stupac >= stupci) return true;
 
     return grid[red][stupac] != 0;
+}
+
+bool Ploca::redpun(int red) const
+{
+    for (int stupac = 0; stupac < stupci; stupac++)
+    {
+        if (grid[red][stupac] == 0)
+        {
+            return false;
+        }
+    }
+    return true;
+}
+
+void Ploca::ocistiRed(int red)
+{
+    for (int stupac = 0; stupac < stupci; stupac++)
+    {
+        grid[red][stupac] = 0;
+	}
+}
+
+void Ploca::spustiRedove(int row)
+{
+    // shift rows above 'row' down by one
+    for (int r = row; r > 0; --r)
+    {
+        for (int c = 0; c < stupci; ++c)
+        {
+            grid[r][c] = grid[r-1][c];
+        }
+    }
+    // clear top row
+    for (int c = 0; c < stupci; ++c) grid[0][c] = 0;
 }

@@ -59,6 +59,7 @@ std::vector<Pozicija> Blok::GetAbsoluteCells() const
     
     std::vector<Pozicija> tiles = cells.at(srotacija);
     std::vector<Pozicija> movedTiles;
+
     movedTiles.reserve(tiles.size());
     for (Pozicija item : tiles)
     {

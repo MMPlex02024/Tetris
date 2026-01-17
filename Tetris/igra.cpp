@@ -60,7 +60,7 @@ void Igra::MoveBlockDown()
     }
 }
 
-int Igra::CurrentBlockRow() const
+int Igra::CurrentBlockRow()
 {
     return trenutniBlok.kretanjeRed;
 }
@@ -92,6 +92,7 @@ void Igra::RotacijaBloka()
     trenutniBlok.Rotiraj();
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.VratiRotaciju();
+		//zakljucavanje();
     }
 }
 
