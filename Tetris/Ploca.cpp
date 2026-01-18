@@ -51,7 +51,7 @@ bool Ploca::celijavani(int red, int stupac)
  const std::vector<Color>& Ploca::GetCellColors()  const
 {
     
-    static const std::vector<Color> colors = { siva, pukeZelena, crvena, zuta, narancasta, ljubicasta, plava, plava };
+    static const std::vector<Color> colors = { siva, crvena, zuta, narancasta, ljubicasta, plava, plava };
     return colors;
 }
 
@@ -83,16 +83,12 @@ void Ploca::ocistiRed(int red)
 	}
 }
 
-void Ploca::spustiRedove(int row)
+void Ploca::spustiRedove(int red, int redovi)
 {
-    // shift rows above 'row' down by one
-    for (int r = row; r > 0; --r)
+    
+    for (int stupac = 0; stupac < stupci; stupac++)
     {
-        for (int c = 0; c < stupci; ++c)
-        {
-            grid[r][c] = grid[r-1][c];
-        }
+        grid[red + redovi][stupac] = grid[red][stupac];
+        grid[red][stupac] = 0;
     }
-    // clear top row
-    for (int c = 0; c < stupci; ++c) grid[0][c] = 0;
 }

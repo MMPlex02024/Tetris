@@ -11,5 +11,5 @@
 
  std::vector<Color> GetCellColors() {
 
-	 return { siva,pukeZelena, crvena,zuta,narancasta,ljubicasta, plava};
+	 return {siva,pukeZelena, crvena,zuta,narancasta,ljubicasta, plava};
  }

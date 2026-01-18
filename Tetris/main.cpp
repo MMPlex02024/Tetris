@@ -25,8 +25,6 @@ int main() {
 
     Igra igra;
 
-    
-
     bool blokZakljucan = false;
 
     float timer = 0.0f;
@@ -36,7 +34,7 @@ int main() {
 
         timer += GetFrameTime();
 
-        /*
+        
         if (timer >= timerPad && !blokZakljucan) {
             igra.MoveBlockDown();
             timer = 0;
@@ -53,7 +51,7 @@ int main() {
                 blokZakljucan = true;
             }
         }
-        */
+        
         igra.HandleInput();
         if (dogodiloSe(0.2))
         {

@@ -92,7 +92,7 @@ void Igra::RotacijaBloka()
     trenutniBlok.Rotiraj();
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.VratiRotaciju();
-		//zakljucavanje();
+		
     }
 }
 
@@ -111,6 +111,7 @@ bool Igra::CelijaVani()
 void Igra::zakljucavanje()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
+    
     for (Pozicija item : tiles) {
         ploca.grid[item.red][item.stupac] = trenutniBlok.id;
     }
@@ -122,6 +123,7 @@ void Igra::zakljucavanje()
 bool Igra::provjerabloka()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
+    
     for (const Pozicija &item : tiles) {
         if (ploca.celijazauzeta(item.red, item.stupac)) {
             return false;

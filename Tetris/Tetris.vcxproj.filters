@@ -41,22 +41,22 @@
     <None Include=".gitignore" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="blokovi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="Ploca.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="blok.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="pozicija.h">
-      <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="boje.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="igra.h">
-      <Filter>Source Files</Filter>
+      <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="blokovi.h">
+    <ClInclude Include="blok.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="boje.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pozicija.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

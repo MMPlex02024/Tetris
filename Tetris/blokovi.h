@@ -1,4 +1,3 @@
-
 #pragma once
 #include "blok.h"
 #include "pozicija.h"

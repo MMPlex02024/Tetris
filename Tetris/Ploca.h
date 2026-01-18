@@ -20,8 +20,8 @@ public:
     void Mreza();     
     const std::vector<Color>& GetCellColors() const;
 
-    
+private:
     bool redpun(int red) const;       
     void ocistiRed(int red);          
-    void spustiRedove(int row);        
+    void spustiRedove(int red, int redovi);        
 };
