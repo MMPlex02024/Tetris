@@ -12,7 +12,7 @@ public:
 	void MoveBlockDown();
 	int CurrentBlockRow();
 	void HandleInput();
-    
+	bool gameOver;
 	Ploca ploca;
 	void Draw();
 
@@ -26,5 +26,6 @@ private:
 	void RotacijaBloka();
 	void zakljucavanje();
 	bool CelijaVani();
+	void Reset();
 };
 

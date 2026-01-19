@@ -14,8 +14,8 @@ public:
 	bool celijazauzeta(int red, int stupac);
     float velicinaR = 0;
     float velicinaS = 0;
-
-   
+    int ocistiredove();
+	 
     void Print();
     void Mreza();     
     int grid[20][10];

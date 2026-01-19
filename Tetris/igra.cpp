@@ -10,7 +10,7 @@ Igra::Igra()
 	blokovi = GetAllBlokovi();
 	trenutniBlok = GetRandomBlok();
 	sljedeciBlok = GetRandomBlok();
-
+	gameOver = false;
 }
 
 Blok Igra::GetRandomBlok()
@@ -33,32 +33,37 @@ std::vector<Blok> Igra::GetAllBlokovi()
 }
 
 void Igra:: Draw() {
-	ploca.Mreza();
+	ploca.Draw();
 	trenutniBlok.Draw();
 }
 
 void Igra::MoveBlockLeft()
 {
+    if(!gameOver){
     trenutniBlok.Move(0, -1);
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(0, 1);
-    }
+     }
+   }
 }
 
 void Igra::MoveBlockRight()
 {
+    if (!gameOver){
     trenutniBlok.Move(0, 1);
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(0, -1);
-    }
+         }
+   }
 }
 
 void Igra::MoveBlockDown()
-{
+{   if(!gameOver){
     trenutniBlok.Move(1, 0);
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.Move(-1, 0);
         zakljucavanje();
+        }
     }
 }
 /*
@@ -70,6 +75,10 @@ int Igra::CurrentBlockRow()
 void Igra::HandleInput()
 {
     int keyPressed = GetKeyPressed();
+    if (gameOver && keyPressed != 0) {
+		gameOver = false;
+        Reset();
+    }
     switch (keyPressed)
     {
         case KEY_LEFT:
@@ -91,10 +100,12 @@ void Igra::HandleInput()
 
 void Igra::RotacijaBloka()
 {
+    if (!gameOver){
     trenutniBlok.Rotiraj();
     if (CelijaVani() || provjerabloka() == false) {
         trenutniBlok.VratiRotaciju();
 		
+        }
     }
 }
 
@@ -121,7 +132,12 @@ void Igra::zakljucavanje()
     }
    
     trenutniBlok = sljedeciBlok;
+    if (provjerabloka() == false)
+    {
+		gameOver = true;
+    }
     sljedeciBlok = GetRandomBlok();
+	ploca.ocistiredove();
 }
 
 bool Igra::provjerabloka()
@@ -136,4 +152,12 @@ bool Igra::provjerabloka()
         }
     }
     return true;
+}
+
+void Igra::Reset()
+{
+	ploca.Init();
+	blokovi = GetAllBlokovi();
+    trenutniBlok = GetRandomBlok();
+	sljedeciBlok = GetRandomBlok();
 }

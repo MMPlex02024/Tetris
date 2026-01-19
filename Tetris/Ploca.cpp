@@ -15,55 +15,36 @@ Ploca::Ploca() {
 }
 
 void Ploca::Init() {
-    for (int i = 0; i < redovi; i++) {
-        for (int j = 0; j < stupci; j++) {
-            grid[i][j] = 0;
-        }
-    }
-   velicinaR = (float)GetScreenWidth() / stupci;
-   velicinaS = (float)GetScreenHeight() / redovi;
-}
-
-/*
-void Ploca::Init() {
-    for (int red = 0; red < redovi; red++) {
-        for (int stupac = 0; stupac < stupci; stupac++) {
-            grid[red][stupac] = 0;
-        }
-    }
-    
-}
-*/
-void Ploca::Print() {
-    for (int i = 0; i < redovi; i++) {
-        for (int j = 0; j < stupci; j++) {
-            cout << grid[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
-/*
-void Ploca::Draw()
-{
-    for (int red = 0; red < redovi; red++)
-    {
+   for (int red = 0; red < redovi; red++)
+       {
         for (int stupac = 0; stupac < stupci; stupac++)
         {
-            int cellValue = grid[red][stupac];
-            // guard against bad indices
-            if (cellValue < 0 || cellValue >= (int)boje.size()) continue;
-            DrawRectangle(stupac * velc + 1, red * velc + 1, velc - 1, velc - 1, boje[cellValue]);
+            grid[red][stupac] = 0;
         }
-    }
+   }
 }
-*/
-void Ploca::Mreza() {
-    for (int i = 0; i <= redovi; i++) {
-        DrawLine(0, i * velicinaS, stupci * velicinaR, i * velicinaS, BLACK);
-    }
-    for (int j = 0; j <= stupci; j++) {
-        DrawLine(j * velicinaR, 0, j * velicinaR, redovi * velicinaS, BLACK);
-    }
+
+
+
+
+void Ploca::Print() {
+    for (int red = 0; red < redovi; red++){
+        for (int stupac = 0; stupac < stupci; stupac++){
+            cout << grid[red][stupac] << " ";
+        }
+        cout << endl;
+	}
+}
+
+void Ploca::Draw() {
+    for (int red =0; red < redovi; red++){
+        for (int stupac = 0; stupac < stupci; stupac++)
+        {
+             int vr = grid[red][stupac];
+                DrawRectangle(stupac * velc + 1, red * velc + 1, velc - 1, velc - 1, boje[vr]);
+            
+        }
+	}
 }
 
 bool Ploca::celijavani(int red, int stupac)
@@ -75,14 +56,7 @@ bool Ploca::celijavani(int red, int stupac)
     }
     return true;
 }
- /*
- const std::vector<Color>& Ploca::GetCellColors()  const
-{
-    
-    static const std::vector<Color> colors = { siva, crvena, zuta, narancasta, ljubicasta, plava, plava };
-    return colors;
-}
-*/
+
 bool Ploca::celijazauzeta(int red, int stupac)
 {
     
@@ -120,4 +94,22 @@ void Ploca::spustiRedove(int red, int redovi)
         grid[red + redovi][stupac] = grid[red][stupac];
         grid[red][stupac] = 0;
     }
+}
+
+int Ploca::ocistiredove()
+{
+    int ocisteniRedovi = 0;
+    for (int red = redovi - 1; red >= 0; red--)
+    {
+        if (redpun(red))
+        {
+            ocistiRed(red);
+            ocisteniRedovi++;
+        }
+        else if (ocisteniRedovi > 0)
+        {
+            spustiRedove(red, ocisteniRedovi);
+        }
+    }
+    return ocisteniRedovi;
 }
