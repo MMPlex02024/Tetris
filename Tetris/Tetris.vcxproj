@@ -143,6 +143,9 @@
     <ClInclude Include="Ploca.h" />
     <ClInclude Include="pozicija.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="monogram.ttf" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

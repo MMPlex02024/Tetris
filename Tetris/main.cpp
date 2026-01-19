@@ -21,10 +21,10 @@ bool dogodiloSe(double interval) {
 int main() {
    Color pukeZelena = { 137, 162, 3, 255 };
 
-    InitWindow(300, 620, "Tetris");
+    InitWindow(600, 600, "Tetris");
     SetTargetFPS(60);
 
-      
+	Font font = LoadFont("resources/monogram.ttf");
 
     Igra igra = Igra();
 
@@ -42,9 +42,25 @@ int main() {
        
         BeginDrawing();
         ClearBackground(pukeZelena);
+        DrawTextEx(font, "Rezultat", {365, 15}, 38, 2, WHITE);
+        DrawTextEx(font, "Sljedeci", { 365, 175 }, 38, 2, WHITE);
+       if(igra.gameOver)
+       {
+        
+           DrawTextEx(font, "GAME OVER", { 320, 450 }, 38, 2, WHITE);
+       }
+       DrawRectangleRounded({ 350, 55, 170, 60 }, 0.1f, 10, DARKGRAY);
+	   char rezstring[20];
+	   
+       sprintf(rezstring, "%d", igra.rez);
+       Vector2 dimenzije = MeasureTextEx(font, rezstring, 38, 2);
+       
+		
+        DrawTextEx(font, rezstring, { 320 + (210 - dimenzije.x)/2, 68}, 38, 2, WHITE);
+        DrawRectangleRounded({ 350, 215, 170, 180 }, 0.1f, 10, DARKGRAY);
 		igra.Draw();  
 
-        //p.Mreza(); 
+        
         EndDrawing();
     }
 

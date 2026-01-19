@@ -60,4 +60,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Font Include="monogram.ttf">
+      <Filter>Resource Files</Filter>
+    </Font>
+  </ItemGroup>
 </Project>

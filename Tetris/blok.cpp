@@ -11,12 +11,12 @@ Blok::Blok()
     kretanjeStupac = 0;
 }
 
-void Blok::Draw() {
+void Blok::Draw(int X, int Y) {
 	std::vector<Pozicija> trenutneCelije =GetAbsoluteCells();
 	
 	for (Pozicija item : trenutneCelije)
 	{
-		DrawRectangle(item.stupac * scelija + 1, item.red  * scelija + 1, scelija - 1, scelija - 1, boje[id]);
+		DrawRectangle(item.stupac * scelija + X, item.red  * scelija + Y, scelija - 1, scelija - 1, boje[id]);
 	}
 }
 

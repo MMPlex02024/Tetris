@@ -11,6 +11,7 @@ Igra::Igra()
 	trenutniBlok = GetRandomBlok();
 	sljedeciBlok = GetRandomBlok();
 	gameOver = false;
+    rez = 0;
 }
 
 Blok Igra::GetRandomBlok()
@@ -34,7 +35,8 @@ std::vector<Blok> Igra::GetAllBlokovi()
 
 void Igra:: Draw() {
 	ploca.Draw();
-	trenutniBlok.Draw();
+	trenutniBlok.Draw(1, 1);
+	sljedeciBlok.Draw(290 ,270);
 }
 
 void Igra::MoveBlockLeft()
@@ -89,6 +91,7 @@ void Igra::HandleInput()
             break;
         case KEY_DOWN:
             MoveBlockDown();
+			rezp(0, 1);
             break;
         case KEY_UP:
             RotacijaBloka();
@@ -137,7 +140,8 @@ void Igra::zakljucavanje()
 		gameOver = true;
     }
     sljedeciBlok = GetRandomBlok();
-	ploca.ocistiredove();
+	int ocisceni = ploca.ocistiredove();
+	rezp(ocisceni, 0);
 }
 
 bool Igra::provjerabloka()
@@ -160,4 +164,22 @@ void Igra::Reset()
 	blokovi = GetAllBlokovi();
     trenutniBlok = GetRandomBlok();
 	sljedeciBlok = GetRandomBlok();
+	rez = 0;
+}
+
+void Igra::rezp(int linijeobrisane, int spustenblok )
+{
+    switch (linijeobrisane)
+    {
+    case 1:
+        rez += 100;
+        break;
+    case 2:
+        rez += 300;
+		break;  
+    default :
+		break;  
+    }
+
+	rez += spustenblok;
 }

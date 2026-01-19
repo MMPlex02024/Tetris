@@ -9,7 +9,7 @@ class Blok {
 public:
 	
 	Blok();
-	void Draw ();
+	void Draw (int X, int Y);
 	void Move(int red, int stupac);
 	std::vector<Pozicija> GetAbsoluteCells();
 	void Rotiraj();

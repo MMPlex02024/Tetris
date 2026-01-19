@@ -15,6 +15,7 @@ public:
 	bool gameOver;
 	Ploca ploca;
 	void Draw();
+	int rez;
 
 private:
     std::vector<Blok> blokovi;
@@ -27,5 +28,6 @@ private:
 	void zakljucavanje();
 	bool CelijaVani();
 	void Reset();
+	void rezp(int linijeobrisane, int spustenblok );
 };
 
