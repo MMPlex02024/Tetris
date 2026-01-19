@@ -1,5 +1,7 @@
 #include "igra.h"
-#include <random>
+//#include <random>
+#include <iostream>
+#include "ploca.h"
 //#include <raylib.h>
 
 Igra::Igra()
@@ -99,7 +101,8 @@ void Igra::RotacijaBloka()
 bool Igra::CelijaVani()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
-    for ( Pozicija &item : tiles) {
+   
+    for ( Pozicija item : tiles) {
         if (ploca.celijavani(item.red, item.stupac)) {
             return true;
         }
@@ -125,8 +128,10 @@ bool Igra::provjerabloka()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
     
-    for (Pozicija item : tiles) {
-        if (ploca.celijazauzeta(item.red, item.stupac)==false) {
+    for (Pozicija item : tiles) 
+        {
+        if (ploca.celijazauzeta(item.red, item.stupac) == false) 
+        {
             return false;
         }
     }

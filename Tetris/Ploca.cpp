@@ -1,7 +1,6 @@
 #include "ploca.h"
 #include <iostream>
 using namespace std;
-//#include <vector>
 #include "boje.h"
 
 
@@ -21,8 +20,8 @@ void Ploca::Init() {
             grid[i][j] = 0;
         }
     }
-    velicinaR = (float)GetScreenWidth() / stupci;
-    velicinaS = (float)GetScreenHeight() / redovi;
+   velicinaR = (float)GetScreenWidth() / stupci;
+   velicinaS = (float)GetScreenHeight() / redovi;
 }
 
 /*
@@ -87,13 +86,13 @@ bool Ploca::celijavani(int red, int stupac)
 bool Ploca::celijazauzeta(int red, int stupac)
 {
     
-    if (grid[red][stupac] = 0) {
+    if (grid[red][stupac] == 0) {
         return true;
     }
 	return false;
 }
 
-bool Ploca::redpun(int red) const
+bool Ploca::redpun(int red) 
 {
     for (int stupac = 0; stupac < stupci; stupac++)
     {

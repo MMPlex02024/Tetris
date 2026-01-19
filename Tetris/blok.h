@@ -18,12 +18,12 @@ public:
 	
 	std::map <int, std::vector <Pozicija>> cells;
 
-	int kretanjeRed;
-	int kretanjeStupac;
 
 private:
 
 	std::vector<Color> boje;
 	int scelija;
 	int srotacija; 
+	int kretanjeRed;
+	int kretanjeStupac;
 };

@@ -1,5 +1,5 @@
 #include "blok.h"
-//#include "pozicija.h"
+#include "pozicija.h"
 
 
 

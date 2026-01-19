@@ -1,5 +1,5 @@
 #pragma once
-#include <iostream>
+//#include <iostream>
 #include <raylib.h>
 #include <vector>
 
@@ -21,7 +21,7 @@ public:
     int grid[20][10];
    
 private:
-    bool redpun(int red) const;       
+    bool redpun(int red);       
     void ocistiRed(int red);          
     void spustiRedove(int red, int redovi);      
    

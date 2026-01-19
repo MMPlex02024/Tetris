@@ -12,7 +12,7 @@ Blok::Blok()
 }
 
 void Blok::Draw() {
-	std::vector<Pozicija> trenutneCelije = cells[srotacija];
+	std::vector<Pozicija> trenutneCelije =GetAbsoluteCells();
 	
 	for (Pozicija item : trenutneCelije)
 	{
@@ -21,16 +21,6 @@ void Blok::Draw() {
 }
 
 void Blok::Move(int red, int stupac) {
-	/*int noviRed = kretanjeRed + red;
-	int noviStupac = kretanjeStupac + stupac;
-
-	for (Pozicija cell : cells[srotacija]) {
-		int x = cell.stupac + noviStupac;
-		int y = cell.red + noviRed;
-
-		if (x < 0 || x > 9) return;   
-		if (y > 19) return;
-	}*/
 
 	kretanjeRed += red;
 	kretanjeStupac += stupac;

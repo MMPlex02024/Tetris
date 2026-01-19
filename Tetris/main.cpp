@@ -19,13 +19,13 @@ bool dogodiloSe(double interval) {
 }
 
 int main() {
-   //Color pukeZelena = { 137, 162, 3, 255 };
+   Color pukeZelena = { 137, 162, 3, 255 };
 
     InitWindow(300, 600, "Tetris");
     SetTargetFPS(60);
 
     Ploca p;  
-    p.Init(); 
+    //p.Init(); 
 
     Igra igra = Igra();
 

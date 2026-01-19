@@ -8,8 +8,7 @@ public:
 	Igra();	
 	Blok GetRandomBlok();
 	std::vector<Blok> GetAllBlokovi();
-	void MoveBlockLeft();
-	void MoveBlockRight();
+	
 	void MoveBlockDown();
 	int CurrentBlockRow();
 	void HandleInput();
@@ -21,6 +20,8 @@ private:
     std::vector<Blok> blokovi;
 	Blok trenutniBlok;
 	Blok sljedeciBlok;
+	void MoveBlockLeft();
+	void MoveBlockRight();
 	bool provjerabloka();
 	void RotacijaBloka();
 	void zakljucavanje();
