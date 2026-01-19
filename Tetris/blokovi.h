@@ -1,4 +1,4 @@
-#pragma once
+/*#pragma once
 #include "blok.h"
 #include "pozicija.h"
 
@@ -9,7 +9,7 @@ class IBlok : public Blok
 public:
     IBlok()
     {
-        id = 3;
+        id = 1;
         cells[0] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2), Pozicija(1, 3) };
         cells[1] = { Pozicija(0, 2), Pozicija(1, 2), Pozicija(2, 2), Pozicija(3, 2) };
         cells[2] = { Pozicija(2, 0), Pozicija(2, 1), Pozicija(2, 2), Pozicija(2, 3) };
@@ -23,7 +23,7 @@ class OBlok : public Blok
 public:
     OBlok()
     {
-        id = 4;
+        id = 2;
         cells[0] = { Pozicija(0, 0), Pozicija(0, 1), Pozicija(1, 0), Pozicija(1, 1) };
         Move(0, 4);
     }
@@ -34,7 +34,7 @@ class TBlok : public Blok
 public:
     TBlok()
     {
-        id = 6;
+        id = 3;
         cells[0] = { Pozicija(0, 1), Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2) };
         cells[1] = { Pozicija(0, 1), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 1) };
         cells[2] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 1) };
@@ -48,7 +48,7 @@ class SBlok : public Blok
 public:
     SBlok()
     {
-        id = 5;
+        id = 4;
         cells[0] = { Pozicija(0, 1), Pozicija(0, 2), Pozicija(1, 0), Pozicija(1, 1) };
         cells[1] = { Pozicija(0, 1), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 2) };
         cells[2] = { Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 0), Pozicija(2, 1) };
@@ -62,7 +62,7 @@ class ZBlok : public Blok
 public:
     ZBlok()
     {
-        id = 7;
+        id = 5;
         cells[0] = { Pozicija(0, 0), Pozicija(0, 1), Pozicija(1, 1), Pozicija(1, 2) };
         cells[1] = { Pozicija(0, 2), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 1) };
         cells[2] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(2, 1), Pozicija(2, 2) };
@@ -76,7 +76,7 @@ class JBlok : public Blok
 public:
     JBlok()
     {
-        id = 2;
+        id = 6;
         cells[0] = { Pozicija(0, 0), Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2) };
         cells[1] = { Pozicija(0, 1), Pozicija(0, 2), Pozicija(1, 1), Pozicija(2, 1) };
         cells[2] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2), Pozicija(2, 2) };
@@ -88,12 +88,14 @@ public:
 class LBlok : public Blok {
     public:
     LBlok() {
-        id = 6; 
+        id = 7; 
 
         cells[0] = { Pozicija(0, 0), Pozicija(1, 0), Pozicija(2, 0), Pozicija(2, 1) };
         cells[1] = { Pozicija(1, 0), Pozicija(1, 1), Pozicija(1, 2), Pozicija(0, 2) };
         cells[2] = { Pozicija(0, 0), Pozicija(0, 1), Pozicija(1, 1), Pozicija(2, 1) };
         cells[3] = { Pozicija(0, 0), Pozicija(0, 1), Pozicija(0, 2), Pozicija(1, 0) };
+        Move(0, 3);
     }
     
 };
+*/

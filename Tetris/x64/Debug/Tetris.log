@@ -1,19 +1,4 @@
-﻿  Ploca.cpp
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(34,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(34,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(34,23): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(37,58): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(37,38): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-O:\OOP projekt\Tetris\Tetris\Ploca.cpp(37,20): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
-  blok.cpp
-  blokovi.cpp
-  boje.cpp
-O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4838: conversion from 'int' to 'unsigned char' requires a narrowing conversion
-O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4305: 'initializing': truncation from 'int' to 'unsigned char'
-O:\OOP projekt\Tetris\Tetris\boje.cpp(8,36): warning C4309: 'initializing': truncation of constant value
-  igra.cpp
-  main.cpp
-  Generating Code...
+﻿  main.cpp
   Tetris.vcxproj -> O:\OOP projekt\Tetris\x64\Debug\Tetris.exe
   'pwsh.exe' is not recognized as an internal or external command,
   operable program or batch file.

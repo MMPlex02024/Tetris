@@ -5,23 +5,28 @@
 
 class Ploca {
 public:
-    int redovi = 20;
-    int stupci = 10;
-    int grid[20][10];   
+     
+    Ploca();
+    void Init();
+	void Draw();
     
     bool celijavani(int red, int stupac);
 	bool celijazauzeta(int red, int stupac);
     float velicinaR = 0;
     float velicinaS = 0;
 
-    Ploca();
-    void Init();
+   
     void Print();
     void Mreza();     
-    const std::vector<Color>& GetCellColors() const;
-
+    int grid[20][10];
+   
 private:
     bool redpun(int red) const;       
     void ocistiRed(int red);          
-    void spustiRedove(int red, int redovi);        
+    void spustiRedove(int red, int redovi);      
+   
+    int redovi;
+	int stupci;
+    int velc;
+	std::vector<Color> boje;
 };

@@ -1,6 +1,6 @@
 #pragma once
 #include "ploca.h"
-#include "blokovi.h"
+#include "blokovi.cpp"
 
 class Igra
 {
@@ -16,6 +16,7 @@ public:
     
 	Ploca ploca;
 	void Draw();
+
 private:
     std::vector<Blok> blokovi;
 	Blok trenutniBlok;

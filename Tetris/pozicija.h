@@ -7,6 +7,4 @@ public:
 
 	int red;
 	int stupac;
-
-
 };

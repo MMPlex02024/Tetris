@@ -1,6 +1,6 @@
 #include "igra.h"
 #include <random>
-#include <raylib.h>
+//#include <raylib.h>
 
 Igra::Igra()
 {
@@ -26,7 +26,7 @@ Blok Igra::GetRandomBlok()
 
 std::vector<Blok> Igra::GetAllBlokovi()  
 {
-	return { IBlok(), JBlok(), OBlok(), SBlok(), TBlok(), ZBlok(), LBlok() };
+	return { IBlok(), JBlok(), OBlok(), SBlok(), TBlok(), ZBlok(), LBlok() }; 
 
 }
 
@@ -59,12 +59,12 @@ void Igra::MoveBlockDown()
         zakljucavanje();
     }
 }
-
+/*
 int Igra::CurrentBlockRow()
 {
     return trenutniBlok.kretanjeRed;
 }
-
+*/
 void Igra::HandleInput()
 {
     int keyPressed = GetKeyPressed();
@@ -99,7 +99,7 @@ void Igra::RotacijaBloka()
 bool Igra::CelijaVani()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
-    for (const Pozicija &item : tiles) {
+    for ( Pozicija &item : tiles) {
         if (ploca.celijavani(item.red, item.stupac)) {
             return true;
         }
@@ -113,6 +113,7 @@ void Igra::zakljucavanje()
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
     
     for (Pozicija item : tiles) {
+       
         ploca.grid[item.red][item.stupac] = trenutniBlok.id;
     }
    
@@ -124,8 +125,8 @@ bool Igra::provjerabloka()
 {
     std::vector<Pozicija> tiles = trenutniBlok.GetAbsoluteCells();
     
-    for (const Pozicija &item : tiles) {
-        if (ploca.celijazauzeta(item.red, item.stupac)) {
+    for (Pozicija item : tiles) {
+        if (ploca.celijazauzeta(item.red, item.stupac)==false) {
             return false;
         }
     }

@@ -1,12 +1,16 @@
 #include <raylib.h>
-#include "ploca.h"
-#include "blokovi.h"
+
 #include "igra.h"
+ 
+#include <iostream>
+#include "boje.h"
 
 double zadnjiupdate = 0;
 
 bool dogodiloSe(double interval) {
-        double sada = GetTime();
+       
+    double sada = GetTime();
+    
     if (sada - zadnjiupdate >= interval){
         zadnjiupdate = sada;
         return true;
@@ -15,7 +19,7 @@ bool dogodiloSe(double interval) {
 }
 
 int main() {
-    Color pukeZelena = { 137, 162, 3, 255 };
+   //Color pukeZelena = { 137, 162, 3, 255 };
 
     InitWindow(300, 600, "Tetris");
     SetTargetFPS(60);
@@ -23,18 +27,18 @@ int main() {
     Ploca p;  
     p.Init(); 
 
-    Igra igra;
+    Igra igra = Igra();
 
-    bool blokZakljucan = false;
+    //bool blokZakljucan = false;
 
-    float timer = 0.0f;
-    float timerPad = 1.0f;
+    //float timer = 0.0f;
+    //float timerPad = 1.0f;
 
     while (!WindowShouldClose()) {
 
-        timer += GetFrameTime();
+        //timer += GetFrameTime();
 
-        
+        /*
         if (timer >= timerPad && !blokZakljucan) {
             igra.MoveBlockDown();
             timer = 0;
@@ -51,15 +55,17 @@ int main() {
                 blokZakljucan = true;
             }
         }
-        
+        */
         igra.HandleInput();
         if (dogodiloSe(0.2))
         {
 			igra.MoveBlockDown();
         }
+       
         BeginDrawing();
         ClearBackground(pukeZelena);
-		igra.Draw();    
+		igra.Draw();  
+
         p.Mreza(); 
         EndDrawing();
     }

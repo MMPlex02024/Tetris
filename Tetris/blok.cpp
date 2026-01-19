@@ -13,15 +13,15 @@ Blok::Blok()
 
 void Blok::Draw() {
 	std::vector<Pozicija> trenutneCelije = cells[srotacija];
+	
 	for (Pozicija item : trenutneCelije)
 	{
-		DrawRectangle((item.stupac + kretanjeStupac) * scelija + 1, (item.red + kretanjeRed) * scelija + 1, scelija - 1, scelija - 1, boje[id]);
-		
+		DrawRectangle(item.stupac * scelija + 1, item.red  * scelija + 1, scelija - 1, scelija - 1, boje[id]);
 	}
 }
 
 void Blok::Move(int red, int stupac) {
-	int noviRed = kretanjeRed + red;
+	/*int noviRed = kretanjeRed + red;
 	int noviStupac = kretanjeStupac + stupac;
 
 	for (Pozicija cell : cells[srotacija]) {
@@ -30,10 +30,10 @@ void Blok::Move(int red, int stupac) {
 
 		if (x < 0 || x > 9) return;   
 		if (y > 19) return;
-	}
+	}*/
 
-	kretanjeRed = noviRed;
-	kretanjeStupac = noviStupac;
+	kretanjeRed += red;
+	kretanjeStupac += stupac;
 }
 
 void Blok::Rotiraj() 
@@ -47,24 +47,23 @@ void Blok::Rotiraj()
 
 void Blok::VratiRotaciju()
 {
-    if (srotacija == 0) {
-        srotacija = (int)cells.size() - 1;
-    } else {
-        srotacija--;
-    }
+
+	srotacija--;
+	if(srotacija == -1)
+		{
+		srotacija = (int)cells.size() - 1;
+	}
 }
 
-std::vector<Pozicija> Blok::GetAbsoluteCells() const
+std::vector<Pozicija> Blok::GetAbsoluteCells()
 {
     
-    std::vector<Pozicija> tiles = cells.at(srotacija);
+    std::vector<Pozicija> tiles = cells[srotacija];
     std::vector<Pozicija> movedTiles;
 
-    movedTiles.reserve(tiles.size());
-    
     for (Pozicija item : tiles)
     {
-        Pozicija newPos(item.red + kretanjeRed, item.stupac + kretanjeStupac);
+        Pozicija newPos = Pozicija(item.red + kretanjeRed, item.stupac + kretanjeStupac);
         movedTiles.push_back(newPos);
     }
     return movedTiles;

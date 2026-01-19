@@ -11,18 +11,19 @@ public:
 	Blok();
 	void Draw ();
 	void Move(int red, int stupac);
+	std::vector<Pozicija> GetAbsoluteCells();
 	void Rotiraj();
 	void VratiRotaciju();
 	int id;
+	
 	std::map <int, std::vector <Pozicija>> cells;
-    std::vector<Color> boje;
-
-    std::vector<Pozicija> GetAbsoluteCells() const;
 
 	int kretanjeRed;
 	int kretanjeStupac;
 
 private:
+
+	std::vector<Color> boje;
 	int scelija;
 	int srotacija; 
 };
